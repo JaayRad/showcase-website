@@ -20,7 +20,6 @@
         <ul>
             <li></li>
             <li><a class = "nav__link" href="#header">Początek</a></li>
-            <li><a class = "nav__link" href="#about">Oferta</a></li>
             <li><a class = "nav__link" href="#contactinfo">Kontakt</a></li>
         </ul>
         </nav>
@@ -30,77 +29,15 @@
       </section>
 
       <nav class="nav nav-desktop">
-        <a class = "nav__link" href="#about">Oferta</a>
+        <a class = "nav__link" href="#header">Początek</a>
         <a class = "nav__link" href="#contactinfo">Kontakt</a>
       </nav>
 
     <canvas id="canvas"></canvas>
     <header id="header" class="heading">
-        <h1>Jakub Radomyski</h1>
-        <p>dev</p>
+        <h1>Jakub Radomyski IT</h1>
+        <p>(Angular in progress...)</p>
     </header>
-
-    <section id="about">
-        <div class="scroll">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-7"><img class="img-fluid" src="img/strona.jpg" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6 about">
-                        <div class="p-1">
-                            <h2>Usługi</h2>
-                            <p>
-                                Obecnie oferuję budowę statycznych stron internetowych (HTML + CSS/SASS + JS) 
-                                oraz aplikacji webowych (blog, sklep, etc). W bliskiej przyszłości moja oferta powiększy 
-                                się o CRM.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="scroll">
-            <div class="container px-5" >
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-6"><img class="img-fluid" src="img/seo.png" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6 about">
-                        <div class="p-1">
-                            <h2>Najwyższa jakość</h2>
-                            <p>
-                                Staram się "dopieszczać" moje projekty, by wypadły jak najlepiej pod względem 
-                                wydajności, dobrych praktyk pisania kodu, dostępności oraz pozycjonowania.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="scroll">
-            <div class="container px-5" >
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-6"><img class="img-fluid" src="img/programming.jpg" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6 about">
-                        <div class="p-1">
-                            <h2>Technologia</h2>
-                            <p>
-                                Frontend: HTML, CSS/SCSS, BootStrap, JavaScript <br>
-                                Backend: Django, Flask <br>
-                                Databases: MySQL, PostgreSQL, MongoDB
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
       <section id="contactinfo">
         <div class="container">
@@ -124,6 +61,39 @@
             </div>    
 
         </div>
+    </section>
+    <section id="contact">
+        <form action="POST" data-netlify="true">
+            <div class="half">
+              <div class="item">
+                <label for="name">IMIĘ</label>
+                <input name="IMIĘ" placeholder="Imię" type="text" id = "first_name">
+              </div>
+              <div class="item">
+                <label for="surname">NAZWISKO</label>
+                <input name="NAZWISKO" placeholder="Nazwisko" type="text" id = "surname">
+              </div>
+            </div>
+            <div class="half2">
+              <div class="item">
+                <label for="phone">TELEFON</label>
+                <input name="NUMER TELEFONU" placeholder="Numer Telefonu" type="text" id = "phone">
+              </div>
+              <div class="item">
+                <label for="email">EMAIL</label>
+                <input name="EMAIL" placeholder="eMail" type="text" id = "email">
+              </div>
+            </div>
+            <div class="full">
+              <label for="message">WIADOMOŚĆ</label>
+              <textarea placeholder="Wiadomość" name="Wiadomość" id = "message"></textarea>
+            </div>
+            <div class="field">
+              <div data-netlify-recaptcha="true" class="p-3 d-flex justify-content-center" style="text-align: center;"></div>
+            </div>
+              <button class="slice">Wyślij</button>
+            </form>
+
     </section>
 
 
